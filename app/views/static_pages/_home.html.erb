@@ -1,0 +1,18 @@
+<% if user_signed_in? %>
+<% else %>
+
+
+<div id="main">
+  <section id="promo" class="section">
+	<div class="center hero-unit">
+	    <h1>Learn from <br />Makers & Doers</h1>
+	    <h2>
+	      Apprenticeships <a href="http://omrails.com/">for Girls, by Girls</a>
+	    </h2>
+	    <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+	</div>
+  </section>
+</div>
+
+<% end %>
+
